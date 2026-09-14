@@ -1,0 +1,433 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: "Roboto", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+}
+
+h1 {
+    font-family: "Rye", serif;
+    color: #d62828;
+}
+
+h2 {
+    color: #d62828;
+}
+
+h3 {
+    color: #ffffff;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+
+/* ==========================================
+   NAVBAR
+   ========================================== */
+
+.site-navbar {
+    background-color: #111111;
+    border-bottom: 4px solid #f4a261;
+}
+
+.navbar-logo {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.site-navbar .navbar-brand {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.site-navbar .navbar-brand:hover {
+    color: #f4a261;
+}
+
+.site-navbar .nav-link {
+    color: #ffffff;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link.active {
+    background-color: #d62828;
+    color: #ffffff;
+}
+
+.site-navbar .navbar-toggler {
+    border: 1px solid #f4a261;
+}
+
+.site-navbar .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
+/* ==========================================
+   MAIN
+   ========================================== */
+
+main {
+    min-height: 70vh;
+}
+
+
+/* ==========================================
+   CARDS
+   ========================================== */
+
+.card {
+    background-color: #4a2c2a;
+    color: #ffffff;
+    border: 2px solid #f4a261;
+    padding: 2rem;
+    box-shadow: 5px 5px 0 #000000;
+}
+
+
+/* ==========================================
+   HERO
+   ========================================== */
+
+.logo {
+    display: block;
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    font-size: 2.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    color: #f4a261;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.hero-image img,
+.menu-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 4px solid #4a2c2a;
+}
+
+
+/* ==========================================
+   WELCOME SECTION
+   ========================================== */
+
+.welcome-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.welcome-section .card {
+    height: 100%;
+}
+
+
+/* ==========================================
+   ICONS
+   ========================================== */
+
+.icon {
+    color: #f4a261;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+/* ==========================================
+   PAGE HEADINGS
+   ========================================== */
+
+.page-heading {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.page-heading h1 {
+    font-size: 2.5rem;
+}
+
+.allergy-warning {
+    color: #d62828;
+    font-weight: 700;
+}
+
+
+/* ==========================================
+   MENU
+   ========================================== */
+
+.menu-section {
+    margin-bottom: 2rem;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.menu-table {
+    width: 100%;
+    margin-bottom: 0;
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.menu-table caption {
+    caption-side: top;
+    padding: 1rem;
+    background-color: #d62828;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.menu-table th {
+    background-color: #f4a261;
+    color: #111111;
+}
+
+.menu-table td,
+.menu-table th {
+    border: 1px solid #777777;
+    padding: 0.8rem;
+}
+
+.menu-table tbody tr:nth-child(even) {
+    background-color: #333333;
+}
+
+.menu-table tbody tr:hover {
+    background-color: #4a2c2a;
+    color: #ffffff;
+}
+
+.menu-note {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+
+/* ==========================================
+   RESERVATIONS
+   ========================================== */
+
+.reservation-section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.reservation-image {
+    width: 100%;
+}
+
+.reservation-image img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+    color: #f4a261;
+}
+
+
+/* ==========================================
+   BOOTSTRAP FORM OVERRIDES
+   ========================================== */
+
+.form-control,
+.form-select {
+    background-color: #111111;
+    color: #ffffff;
+    border: 1px solid #777777;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: #111111;
+    color: #ffffff;
+    border-color: #f4a261;
+    box-shadow: 0 0 0 0.2rem rgba(244, 162, 97, 0.25);
+}
+
+.form-control::placeholder {
+    color: #aaaaaa;
+}
+
+
+/* ==========================================
+   FIELDSET
+   ========================================== */
+
+fieldset {
+    margin: 1.5rem 0;
+    padding: 1rem 1.25rem;
+    border: 2px solid #777777;
+}
+
+legend {
+    padding: 0 0.5rem;
+    font-weight: 700;
+    color: #f4a261;
+}
+
+.radio-option,
+.checkbox-option {
+    margin: 0.7rem 0;
+}
+
+.radio-option label,
+.checkbox-option label {
+    margin-left: 0.4rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================
+   BUTTONS
+   ========================================== */
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.button-group .btn {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #d62828;
+    font-family: inherit;
+    font-weight: 700;
+}
+
+.button-group .btn-primary {
+    background-color: #f4a261;
+    border-color: #d62828;
+    color: #111111;
+}
+
+.button-group .btn-primary:hover {
+    background-color: #d62828;
+    border-color: #f4a261;
+    color: #ffffff;
+}
+
+.button-group .btn-secondary {
+    background-color: #111111;
+    border-color: #777777;
+    color: #ffffff;
+}
+
+.button-group .btn-secondary:hover {
+    background-color: #333333;
+    border-color: #f4a261;
+}
+
+
+/* ==========================================
+   ALERTS
+   ========================================== */
+
+#reservation-message {
+    margin-bottom: 1rem;
+}
+
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+footer {
+    padding: 1.5rem;
+    background-color: #111111;
+    color: #ffffff;
+    text-align: center;
+    border-top: 3px solid #4a2c2a;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* ==========================================
+   RESPONSIVE DESIGN
+   ========================================== */
+
+@media (max-width: 800px) {
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .reservation-image img {
+        min-height: 300px;
+        max-height: 500px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .card {
+        padding: 1.25rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .button-group .btn {
+        width: 100%;
+    }
+
+    .reservation-image img {
+        min-height: 250px;
+    }
+
+    .navbar-logo {
+        width: 45px;
+        height: 45px;
+    }
+
+}
