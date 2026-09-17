@@ -1,0 +1,86 @@
+[
+  {
+    "name": "The Rebel Brownie",
+    "description": "Dark chocolate brownie with chocolate chips.",
+    "price": 6.00,
+    "category": "Breakfast",
+    "img": "images/chocolate.png"
+  },
+  {
+    "name": "The Freedom Bar",
+    "description": "Dark chocolate, caramel, and sea salt.",
+    "price": 5.00,
+    "category": "Breakfast",
+    "img": "images/chocolate.png"
+  },
+  {
+    "name": "The Hidden Truffle",
+    "description": "Hand-rolled dark chocolate truffles.",
+    "price": 7.25,
+    "category": "Breakfast",
+    "img": "images/chocolate.png"
+  },
+  {
+    "name": "The Underground Mocha",
+    "description": "Hot espresso with rich chocolate and steamed milk.",
+    "price": 5.75,
+    "category": "Breakfast",
+    "img": "images/img3.png"
+  },
+  {
+    "name": "The Organizer",
+    "description": "Spicy dark chocolate with cinnamon.",
+    "price": 6.50,
+    "category": "Lunch",
+    "img": "images/chocolate.png"
+  },
+  {
+    "name": "The Night Shift",
+    "description": "Warm chocolate cake with chocolate sauce.",
+    "price": 7.00,
+    "category": "Lunch",
+    "img": "images/restaurant.png"
+  },
+  {
+    "name": "The Resistance",
+    "description": "Dark chocolate cake with espresso frosting.",
+    "price": 7.50,
+    "category": "Lunch",
+    "img": "images/chocolate.png"
+  },
+  {
+    "name": "The Rebel Shake",
+    "description": "Cold chocolate shake with whipped cream.",
+    "price": 6.75,
+    "category": "Lunch",
+    "img": "images/img3.png"
+  },
+  {
+    "name": "The Underground",
+    "description": "Chocolate mousse with dark chocolate shavings.",
+    "price": 6.50,
+    "category": "Dinner",
+    "img": "images/chocolate.png"
+  },
+  {
+    "name": "The Last Secret",
+    "description": "Hot chocolate with whipped cream and cocoa.",
+    "price": 5.50,
+    "category": "Dinner",
+    "img": "images/img3.png"
+  },
+  {
+    "name": "The Freedom Cake",
+    "description": "Rich chocolate cake with vanilla cream.",
+    "price": 8.00,
+    "category": "Dinner",
+    "img": "images/chocolate.png"
+  },
+  {
+    "name": "The Secret Sundae",
+    "description": "Chocolate ice cream with chocolate sauce and shavings.",
+    "price": 7.50,
+    "category": "Dinner",
+    "img": "images/chocolate.png"
+  }
+]
