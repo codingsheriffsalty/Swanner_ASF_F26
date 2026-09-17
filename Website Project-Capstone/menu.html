@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Menu | The Freepaw Underground</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Rye&family=Roboto:wght@400;500;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="menu-page">
+
+<header>
+
+    <nav class="navbar navbar-expand-lg site-navbar">
+
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center"
+               href="index.html">
+
+                <img src="images/freepawlogo.png"
+                     alt="The Freepaw Underground logo"
+                     class="navbar-logo">
+
+                <span>The Freepaw Underground</span>
+
+            </a>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <div class="navbar-nav ms-auto">
+
+                    <a class="nav-link" href="index.html">
+                        Home
+                    </a>
+
+                    <a class="nav-link" href="about.html">
+                        About
+                    </a>
+
+                    <a class="nav-link active" href="menu.html">
+                        Menu
+                    </a>
+
+                    <a class="nav-link" href="reservations.html">
+                        Reservations
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<main class="container py-5">
+
+    <section class="page-heading">
+
+        <h1>Chocolate for the Free</h1>
+
+        <p>
+            Browse our underground menu. Use the category filter or
+            move through the menu one item at a time.
+        </p>
+
+        <p class="allergy-warning">
+            Important: All chocolate products contain dairy unless noted otherwise.
+        </p>
+
+    </section>
+
+    <!-- Menu Filter -->
+    <section class="filter-section card mb-4">
+
+        <div class="row align-items-center">
+
+            <div class="col-md-6">
+
+                <label for="category-filter" class="form-label">
+                    Filter Menu by Category
+                </label>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <select id="category-filter"
+                        class="form-select">
+
+                    <option value="All">
+                        All
+                    </option>
+
+                    <option value="Breakfast">
+                        Breakfast
+                    </option>
+
+                    <option value="Lunch">
+                        Lunch
+                    </option>
+
+                    <option value="Dinner">
+                        Dinner
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Menu Carousel -->
+    <section class="menu-carousel card">
+
+        <div class="row align-items-center g-4">
+
+            <div class="col-lg-5">
+
+                <img id="menu-image"
+                     class="menu-carousel-image"
+                     src="images/chocolate.png"
+                     alt="Chocolate menu item">
+
+            </div>
+
+            <div class="col-lg-7">
+
+                <div class="menu-details">
+
+                    <p class="menu-category"
+                       id="menu-category">
+                    </p>
+
+                    <h2 id="menu-name">
+                        Loading Menu...
+                    </h2>
+
+                    <p id="menu-description">
+                        Please wait while the underground menu loads.
+                    </p>
+
+                    <p class="menu-price"
+                       id="menu-price">
+                    </p>
+
+                </div>
+
+                <div class="carousel-controls">
+
+                    <button id="prev-button"
+                            type="button"
+                            class="btn btn-primary">
+
+                        PREV
+
+                    </button>
+
+                    <span id="menu-counter"
+                          class="menu-counter">
+                    </span>
+
+                    <button id="next-button"
+                            type="button"
+                            class="btn btn-primary">
+
+                        NEXT
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Menu Loading/Error Message -->
+    <div id="menu-message" class="mt-4"></div>
+
+</main>
+
+<footer>
+
+    <p>&copy; 2026 The Freepaw Underground</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

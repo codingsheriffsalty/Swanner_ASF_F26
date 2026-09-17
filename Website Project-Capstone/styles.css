@@ -1,0 +1,481 @@
+/* Primary = dark brown for the chocolate-shop atmosphere, Accent = orange for steampunk brass, Red = rebellion, Text = white for contrast */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #1a1a1a;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #ffffff;
+    font-family: "Roboto", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.home-page {
+    background-image:
+            linear-gradient(
+                    rgba(0, 0, 0, 0.78),
+                    rgba(0, 0, 0, 0.78)
+            ),
+            url("images/restaurant.png");
+}
+
+.about-page {
+    background-image:
+            linear-gradient(
+                    rgba(0, 0, 0, 0.80),
+                    rgba(0, 0, 0, 0.80)
+            ),
+            url("images/restaurant.png");
+}
+
+.menu-page {
+    background-image:
+            linear-gradient(
+                    rgba(0, 0, 0, 0.82),
+                    rgba(0, 0, 0, 0.82)
+            ),
+            url("images/chocolate.png");
+}
+
+.reservations-page {
+    background-image:
+            linear-gradient(
+                    rgba(0, 0, 0, 0.80),
+                    rgba(0, 0, 0, 0.80)
+            ),
+            url("images/img3.png");
+}
+
+.error-page {
+    background-image:
+            linear-gradient(
+                    rgba(0, 0, 0, 0.80),
+                    rgba(0, 0, 0, 0.80)
+            ),
+            url("images/restaurant.png");
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+}
+
+h1 {
+    font-family: "Rye", serif;
+    color: #d62828;
+}
+
+h2 {
+    color: #d62828;
+}
+
+h3 {
+    color: #ffffff;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+main {
+    min-height: 70vh;
+}
+
+.site-navbar {
+    background-color: #111111;
+    border-bottom: 4px solid #f4a261;
+}
+
+.navbar-logo {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.site-navbar .navbar-brand {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+.site-navbar .navbar-brand:hover {
+    color: #f4a261;
+}
+
+.site-navbar .nav-link {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link.active {
+    background-color: #d62828;
+    color: #ffffff;
+}
+
+.site-navbar .navbar-toggler {
+    border: 1px solid #f4a261;
+}
+
+.site-navbar .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.card {
+    background-color: #4a2c2a;
+    color: #ffffff;
+    border: 2px solid #f4a261;
+    padding: 2rem;
+    box-shadow: 5px 5px 0 #000000;
+}
+
+.hero-card {
+    margin-bottom: 3rem;
+}
+
+.logo {
+    display: block;
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.hero-card h1 {
+    font-size: 2.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    color: #f4a261;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 4px solid #4a2c2a;
+    border-radius: 8px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.welcome-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.feature-card {
+    height: 100%;
+}
+
+.icon {
+    color: #f4a261;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.page-heading {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.page-heading h1 {
+    font-size: 2.5rem;
+}
+
+.allergy-warning {
+    color: #d62828;
+    font-weight: 700;
+}
+
+.about-card {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-image {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.filter-section {
+    max-width: 900px;
+    margin: 0 auto 1.5rem;
+}
+
+.filter-section .form-label {
+    color: #f4a261;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.menu-carousel {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.menu-carousel-image {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border: 4px solid #f4a261;
+    border-radius: 8px;
+}
+
+.menu-category {
+    color: #f4a261;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu-details h2 {
+    color: #d62828;
+    font-size: 2rem;
+}
+
+.menu-price {
+    color: #f4a261;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.carousel-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.menu-counter {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.reservation-section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.reservation-image {
+    width: 100%;
+}
+
+.reservation-image img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+    color: #f4a261;
+}
+
+.form-control,
+.form-select {
+    background-color: #111111;
+    color: #ffffff;
+    border: 1px solid #777777;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: #111111;
+    color: #ffffff;
+    border-color: #f4a261;
+    box-shadow: 0 0 0 0.2rem rgba(244, 162, 97, 0.25);
+}
+
+.form-control::placeholder {
+    color: #aaaaaa;
+}
+
+fieldset {
+    margin: 1.5rem 0;
+    padding: 1rem 1.25rem;
+    border: 2px solid #777777;
+}
+
+legend {
+    padding: 0 0.5rem;
+    font-weight: 700;
+    color: #f4a261;
+}
+
+.radio-option,
+.checkbox-option {
+    margin: 0.7rem 0;
+}
+
+.radio-option label,
+.checkbox-option label {
+    margin-left: 0.4rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.button-group .btn,
+.hero-buttons .btn,
+.carousel-controls .btn {
+    padding: 0.75rem 1.5rem;
+    font-family: inherit;
+    font-weight: 700;
+}
+
+.btn-primary {
+    background-color: #f4a261;
+    border-color: #d62828;
+    color: #111111;
+}
+
+.btn-primary:hover {
+    background-color: #d62828;
+    border-color: #f4a261;
+    color: #ffffff;
+}
+
+.btn-secondary {
+    background-color: #111111;
+    border-color: #777777;
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #333333;
+    border-color: #f4a261;
+    color: #ffffff;
+}
+
+#reservation-message {
+    margin-bottom: 1rem;
+}
+
+.error-card {
+    max-width: 700px;
+    margin: 4rem auto;
+}
+
+.error-icon {
+    color: #f4a261;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.error-card h1 {
+    font-size: 5rem;
+}
+
+.error-card h2 {
+    color: #f4a261;
+}
+
+footer {
+    padding: 1.5rem;
+    background-color: #111111;
+    color: #ffffff;
+    text-align: center;
+    border-top: 3px solid #4a2c2a;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    .hero-card h1 {
+        font-size: 2.2rem;
+    }
+
+    .reservation-image img {
+        min-height: 300px;
+        max-height: 500px;
+    }
+
+    .menu-carousel-image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 500px) {
+    .card {
+        padding: 1.25rem;
+    }
+
+    .navbar-logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .button-group .btn {
+        width: 100%;
+    }
+
+    .carousel-controls {
+        flex-wrap: wrap;
+    }
+
+    .menu-carousel-image {
+        height: 250px;
+    }
+
+    .reservation-image img {
+        min-height: 250px;
+    }
+
+    .error-card h1 {
+        font-size: 4rem;
+    }
+}
